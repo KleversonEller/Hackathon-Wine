@@ -1,0 +1,7 @@
+.DS_Store
+dist
+dist-ssr
+*.local
+index.js
+serviceWorker.js
+node_modules/
