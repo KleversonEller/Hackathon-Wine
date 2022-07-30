@@ -1,11 +1,12 @@
-import Routers from "./routes";
-import "./App.css";
+import IndexRouter from "./routes";
+import React from "react";
+import { BrowserRouter } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <Routers />
-    </div>
+    <BrowserRouter>
+      <IndexRouter />
+    </BrowserRouter>
   );
 }
 

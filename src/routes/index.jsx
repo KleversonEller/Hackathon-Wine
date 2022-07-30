@@ -1,11 +1,17 @@
-import { Route, Routes, BrowserRouter } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
+import React from "react";
+import Home from "../pages/home";
+import Catalogo from "../pages/catalago";
+import CatalogoId from "../components/catalogo.id";
 
-const Routers = () => {
-  <BrowserRouter>
+const IndexRouter = () => {
+  return (
     <Routes>
-      <Route></Route>
+      <Route path="/" element={<Home />} />
+      <Route path="/catalogo" element={<Catalogo />} />
+      <Route path="/catalogo/:id" element={<CatalogoId />} />
     </Routes>
-  </BrowserRouter>;
+  );
 };
 
-export default Routers;
+export default IndexRouter;
