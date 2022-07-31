@@ -1,16 +1,15 @@
 .instagram-container {
-  border: 1px black solid;
+  border: 5px white solid;
   height: 500px;
   width: 250px;
   margin: 10px auto;
-  border-radius: 5px;
+  border-radius: 8px;
+  background-color: white;
 }
 
 .instagram-header {
-  /* border: 1px blue solid; */
   display: flex;
   height: 50px;
-  /* align-items:center; */
   margin: 2px auto;
 }
 
@@ -22,12 +21,10 @@
 
 .instagram-username {
   font-weight: bold;
-  /* border: 1px purple solid; */
   margin: 4px 2px 1px;
 }
 
 .instagram-localization {
-  /* border: 1px purple solid; */
   margin: 1px 2px;
   font-size: small;
 }
@@ -40,7 +37,6 @@
 .instagram-actions {
   display: flex;
   justify-content: space-between;
-  /* border: 1px green solid; */
   height: 30px;
 }
 
@@ -50,7 +46,6 @@ div > svg {
 }
 
 .instagram-user-caption {
-  /* border: 1px yellow solid; */
   text-align: left;
   margin: 4px;
   height: 150px;
@@ -61,6 +56,5 @@ div > svg {
 }
 
 .instagram-caption {
-  /* border: 1px purple solid; */
   margin: 0 auto;
 }
