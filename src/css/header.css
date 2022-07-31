@@ -1,19 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
 .header-container {
     align-items: center;
-    /* background-color: blueviolet; */
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
 }
 
 .header-img-bottle1 {
+    height: auto;
     width: 10%;
 }
 
 .header-img-logo {
-    width: 15%;
+    width: 10%;
+}
+
+.header-title {
+    font-family: 'Raleway', sans-serif;
 }
 
 .header-img-bottle2 {
-    height: 100px;
-    width: 100px;
+    height: auto;
+    width: 10%;
 }

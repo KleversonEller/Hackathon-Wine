@@ -1,0 +1,16 @@
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-socialMediaIcons {
+    align-items: center;
+    display: flex;
+    font-size: 200%;
+    height: auto;
+    width: 8%;
+}
+
+.footer-image-bottle {
+    width: 10%;
+}
