@@ -1,5 +1,5 @@
 import React from "react";
-import { FaUserAlt } from "react-icons/fa";
+import { FiUser } from "react-icons/fi";
 import { MdOutlineLocalGroceryStore } from "react-icons/md";
 import { Link, useNavigate } from "react-router-dom";
 import "../css/navBar.css";
@@ -13,36 +13,31 @@ const NavBar = () => {
 
   return (
     <div className="navBar-container">
-      <div className="nav-club">
+      <div className="navBar-link">
         <Link to="/clube">Clube</Link>
       </div>
-      <div className="nav-store">
+      <div className="navBar-link">
         <Link to="/loja">Loja</Link>
       </div>
-      <div className="nav-products">
+      <div className="navBar-link">
         <Link to="/produtos">Produtores</Link>
       </div>
-      <div className="nav-sale">
+      <div className="navBar-link">
         <Link to="/ofertas">Ofertas</Link>
       </div>
-      <div className="nav-event">
+      <div className="navBar-link">
         <Link to="/eventos">Eventos</Link>
       </div>
-      <div className="nav-downloadApp">
+      <div className="navBar-link">
         <Link to="/app">Baixe o App</Link>
       </div>
-      <div className="nav-profileIcon">
-        <button onClick={() => clickNavigate("/perfil")}>
-          <FaUserAlt />
-        </button>
-      </div>
-      <div className="nav-nav-storeIcon">
-        <button
-          className="outline outline-offset-2 outline-1"
-          onClick={() => clickNavigate("/store")}
-        >
-          <MdOutlineLocalGroceryStore />
-        </button>
+      <div className="navBar-icons">
+        <div>
+          <FiUser onClick={() => clickNavigate("/perfil")} />
+        </div>
+        <div>
+          <MdOutlineLocalGroceryStore onClick={() => clickNavigate("/store")} />
+        </div>
       </div>
     </div>
   );

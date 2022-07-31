@@ -1,6 +1,6 @@
 import React from "react";
 import Logo from "../image/wine.svg";
-import garrafas3 from "../image/garrafas3.jpeg";
+import garrafas3 from "../image/garrafas3.png";
 import garrafa2 from "../image/garrafa2.png";
 import "../css/header.css";
 
