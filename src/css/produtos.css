@@ -31,9 +31,10 @@
 
 .products-informations {
     width: 650px;
+    height: auto;
 }
 
 /* .products-imag {
     display: flex;
-    justify-content: center;;
+    justify-content: center;
 } */
