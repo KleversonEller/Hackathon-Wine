@@ -1,43 +1,63 @@
 .produtos {
-    background-color: blue;
+    background-color: rgb(241, 236, 236);
     width: 60vw;
-    height: 650px;
+    height: 600px;
 }
 
 .container {
     width: 90%;
     height: 90%;
-    background-color: aqua;
     padding: 3% 5% 0 5%;
 }
 
 .container-card {
     display: flex;
+    border-radius: 10px;
     justify-content: space-around;
+    background-color: #8beb62;
+    width: 50%;
     align-items: center;
-    background-color: blueviolet;
-    height: 68%;
+    height: 65%;
     margin-right: 20px;
     padding: 3%;
+    margin-top: 10px;
 }
 
 .container-card img {
-    background-color: chartreuse;
     width: 50%;
     height: 80%;
 }
 
 .container-descrição {
-    background-color: brown;
     display: flex;
-    justify-content: space-between;
     flex-direction: column;
     align-items: center;
-    margin: 2%;
+}
+
+.container-descrição span {
+    margin: 8px;
 }
 
 .container-link {
     display: flex;
-    justify-content: flex-end;
-    background-color: crimson;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    background-color: #FF914D;
+    margin-left: 350px;
+    width: 25%;
+    height: 25px;
+    padding: 2px;
+}
+
+.container-link:hover {
+    display: flex;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    background-color: #d46017;
+    margin-left: 350px;
+    width: 25%;
+    height: 25px;
+    padding: 2px;
 }

@@ -21,7 +21,6 @@ const Produtos = () => {
 
   return (
     <div className="produtos">
-      <h3>Produtos</h3>
       {productsList.length !== 0 && (
         <Carousel
           className="container"
@@ -39,10 +38,22 @@ const Produtos = () => {
               />
               <div>
                 <div className="container-descrição">
-                  <span>{objeto.name}</span>
-                  <span>{objeto.type}</span>
-                  <span>{objeto.country}</span>
-                  <span>{objeto.sommelierComment}</span>
+                  <span>
+                    <b>{objeto.name}</b>
+                  </span>
+                  <span>
+                    <b>Tipo: </b>
+                    {objeto.type}
+                  </span>
+                  <span>
+                    <b>Origem: </b>
+                    {objeto.country}
+                  </span>
+                  <span>
+                    <b>Comentário Sommelier:</b> <br />
+                    <br />
+                    <i>{objeto.sommelierComment}</i>
+                  </span>
                 </div>
                 <Link to={`/catalogo/${objeto.id}`} className="container-link">
                   Saiba Mais
