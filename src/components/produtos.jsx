@@ -5,6 +5,7 @@ import Autoplay from "embla-carousel-autoplay";
 import { v4 as uuidv4 } from "uuid";
 import useStore from "../store";
 import { Link } from "react-router-dom";
+import "../css/produtos.css";
 
 const Produtos = () => {
   const setProducts = useStore((state) => state.setProductsList);
@@ -19,31 +20,31 @@ const Produtos = () => {
   const productsList = useStore(useCallback((state) => state.produtos, []));
 
   return (
-    <div>
-      <h3>Produtos</h3>
+    <div className="products-container">
+      <h3 className="products-title">Produtos</h3>
       {productsList.length !== 0 && (
         <Carousel
           sx={{ maxWidth: 600 }}
           mx="auto"
           withIndicators
-          height={500}
+          height={700}
           plugins={[autoplay.current]}
           onMouseEnter={autoplay.current.stop}
           onMouseLeave={autoplay.current.reset}
         >
           {productsList.map((objeto) => (
-            <Carousel.Slide key={uuidv4()}>
+            <Carousel.Slide key={uuidv4()} className="products-objects">
               <div>
-                <img src={objeto.image} alt="" />
+                <img src={objeto.image} alt="Imagem do vinho" className="products-imag" />
               </div>
-              <div>
-                <div>
+              <div className="products-container">
+                <div className="products-informations">
                   <span>{objeto.name}</span>
                   <span>{objeto.type}</span>
                   <span>{objeto.country}</span>
                   <span>{objeto.sommelierComment}</span>
                 </div>
-                <div>
+                <div className="products-link">
                   <Link to={`/catalogo/${objeto.id}`}>Saiba Mais</Link>
                 </div>
               </div>
