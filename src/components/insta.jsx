@@ -13,6 +13,8 @@ const Insta = () => {
 
   return (
     <div className="insta-container">
+      <h2 className="insta-title">#WineExperience</h2>
+      <h3 className="insta-subtitle">Conte a sua experiência</h3>
       <Carousel
         className="insta-objects"
         sx={{ maxWidth: 400 }}

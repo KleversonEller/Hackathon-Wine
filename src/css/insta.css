@@ -5,3 +5,19 @@
 .mantine-UnstyledButton-root {
   border: 1px black solid;
 }
+
+.insta-container {
+  width: 25rem;
+  margin: 20px;
+  margin-left: 50px;
+  background-color: rgb(241, 236, 236);
+}
+
+.insta-title {
+  padding: 20px 50px 0px;
+}
+
+.insta-subtitle {
+  padding: 0px 90px;
+  color: #DB1E53;
+}
