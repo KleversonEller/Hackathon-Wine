@@ -18,17 +18,14 @@ const Home = () => {
       <div>
         <NavBar />
       </div>
-      <section>
-        <Insta />
-        <div></div>
-        <div></div>
-        <div></div>
-      </section>
       <div>
-        <Produtos />
+        <Insta />
       </div>
       <div>
         <Planos />
+      </div>
+      <div>
+        <Produtos />
       </div>
       <div>
         <Curiosidades />
