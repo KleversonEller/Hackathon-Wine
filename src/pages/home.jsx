@@ -18,15 +18,13 @@ const Home = () => {
       <div>
         <NavBar />
       </div>
-      <div className="first-grid">
+      <div className="container-home">
         <div>
           <Insta />
         </div>
         <div>
           <Planos />
         </div>
-      </div>
-      <div className="second-grid">
         <div>
           <Produtos />
         </div>

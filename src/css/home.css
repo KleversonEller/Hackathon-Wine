@@ -1,7 +1,5 @@
-.first-grid {
+.container-home {
     display: flex;
-}
-
-.second-grid {
-    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }

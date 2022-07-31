@@ -1,65 +1,49 @@
 .produtos {
-    background-color: rgb(241, 236, 236);
-    width: 60vw;
-    height: 600px;
+    width: 50vw;
+    height: 500px;
 }
 
 .container {
     width: 90%;
-    height: 90%;
+    height: 100%;
+    background-color:rgb(241, 236, 236);
     padding: 3% 5% 0 5%;
 }
 
 .container-card {
     display: flex;
-    border-radius: 10px;
     justify-content: space-around;
-    background-color: #8beb62;
-    width: 50%;
     align-items: center;
-    height: 65%;
+    border-radius: 8px;
+    background-color: white;
+    height: 380px;
     margin-right: 20px;
     padding: 3%;
-    margin-top: 10px;
 }
 
 .container-card img {
     width: 50%;
-    height: 80%;
+    height: 70%;
 }
 
 .container-descrição {
+    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.container-descrição span {
-    margin: 8px;
+    margin: 2%;
 }
 
 .container-link {
+    margin-top: 20px;
     display: flex;
-    border-radius: 5px;
-    justify-content: center;
-    align-items: center;
-    background-color: #FF914D;
-    margin-left: 350px;
-    width: 25%;
-    height: 25px;
-    padding: 2px;
+    justify-content: flex-end;
 }
 
-.container-link:hover {
-    display: flex;
+.link {
+    background-color: #DB1E53;
     border-radius: 5px;
-    justify-content: center;
-    align-items: center;
-    background-color: #d46017;
-    margin-left: 350px;
-    width: 25%;
-    height: 25px;
-    padding: 2px;
+    padding: 8px;
 }
 
 .pais {

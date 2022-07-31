@@ -58,9 +58,11 @@ const Produtos = () => {
                     <i>{objeto.sommelierComment}</i>
                   </span>
                 </div>
-                <Link to={`/catalogo/${objeto.id}`} className="container-link">
-                  Saiba Mais
-                </Link>
+                <div className="container-link">
+                  <Link to={`/catalogo/${objeto.id}`} className="link">
+                    Saiba Mais
+                  </Link>
+                </div>
               </div>
             </Carousel.Slide>
           ))}

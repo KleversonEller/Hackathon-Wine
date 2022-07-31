@@ -8,13 +8,11 @@ const Curiosidades = () => {
     <div className="curiosity-container">
       <h3>CURIOSIDADES</h3>
       <div className="curiosity-card">
-        <div>
-          <img
-            src={imgCuriosidade}
-            alt="Pessoas vendadas em frente de uma mesa com taças de vinho segurando uma taça proxima ao nariz apreciando o aroma do vinho"
-            className="curiosity-img"
-          />
-        </div>
+        <img
+          src={imgCuriosidade}
+          alt="Pessoas vendadas em frente de uma mesa com taças de vinho segurando uma taça proxima ao nariz apreciando o aroma do vinho"
+          className="curiosity-img"
+        />
         <div className="curiosity-span">
           <span>
             Você sabia que degustar uma taça de vinho diariamente pode ser benéfico para a
@@ -28,19 +26,6 @@ const Curiosidades = () => {
             é uma substância encontrada nos vinhos que tem propriedades antioxidantes.
             <br />
             Nada mal, né? Dá para degustar com moderação sem culpa!
-          </span>
-        </div>
-        <div className="curiosity-span">
-          <span>
-            Se você quer explorar mais o universo dos vinhos, Terroir é um conceito
-            importante que precisa conhecer.
-            <br />
-            Significa o conjunto de fatores de uma região produtora de vinhos, desde o
-            solo, o clima e a geografia até os métodos aplicados na vinificação dos
-            rótulos.
-            <br />
-            Esses fatores em conjunto são responsáveis pela qualidade e características
-            dos vinhos que chegam no mercado ao consumidor final.
           </span>
         </div>
       </div>

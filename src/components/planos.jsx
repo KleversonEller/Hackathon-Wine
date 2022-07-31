@@ -19,40 +19,34 @@ const Planos = () => {
 
   return (
     <div className="plan-container">
-      <h3 className="plan-title">Planos</h3>
+      <h3 className="plan-title">PLANOS</h3>
       <div className="plan-objects">
-        <img src={wineBottle} alt="Imagem garrafa de vidro" className="plan-image" />
-        {plansList.map((objeto) => (
-          <div className="plan-card-promotion" key={uuidv4()}>
-            <span className="plan-card-name">{objeto.name}</span>
-            <br />
-            <br />
-            <span className="plan-card-promotion-price">{objeto.promotion}</span>
-            <br />
-            <span>
-              R$ <s>{objeto.price}</s> por
-            </span>
-            <br />
-            <span>R$ {objeto.priceWithDiscount} /mês</span>
-            <br />
-            {objeto.gift && (
+        <img src={wineBottle} alt="Imagem garrafa de vidro" />
+        <div className="plan-card">
+          {plansList.map((objeto) => (
+            <div className="plan-card-promotion" key={uuidv4()}>
+              <span>{objeto.name}</span>
+              <span>{objeto.promotion}</span>
               <span>
-                <FiGift />
-                {objeto.gift}
+                R$ <s>{objeto.price}</s> por
               </span>
-            )}
-            <br />
-            <button
-              className="plan-btn"
-              type="button"
-              onClick={() => navigate(`/planos/${objeto.id}`)}
-            >
-              ASSINAR
-            </button>
-            <br />
-            <br />
-          </div>
-        ))}
+              <span>R$ {objeto.priceWithDiscount} /mês</span>
+              {objeto.gift && (
+                <span>
+                  <FiGift />
+                  {objeto.gift}
+                </span>
+              )}
+              <button
+                className="plan-btn"
+                type="button"
+                onClick={() => navigate(`/planos/${objeto.id}`)}
+              >
+                ASSINAR
+              </button>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
