@@ -23,15 +23,15 @@ const Home = () => {
           <Insta />
         </div>
         <div>
-          <Produtos />
+          <Planos />
         </div>
       </div>
       <div className="second-grid">
         <div>
-          <Curiosidades />
+          <Produtos />
         </div>
         <div>
-          <Planos />
+          <Curiosidades />
         </div>
       </div>
       <div>
