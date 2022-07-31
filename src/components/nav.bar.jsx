@@ -2,6 +2,7 @@ import React from "react";
 import { FiUser } from "react-icons/fi";
 import { MdOutlineLocalGroceryStore } from "react-icons/md";
 import { Link, useNavigate } from "react-router-dom";
+import { osName } from "mobile-device-detect";
 import "../css/navBar.css";
 
 const NavBar = () => {
@@ -29,7 +30,24 @@ const NavBar = () => {
         <Link to="/eventos">Eventos</Link>
       </div>
       <div className="navBar-link">
-        <Link to="/app">Baixe o App</Link>
+        {osName === "Android" && (
+          <a
+            href="https://play.google.com/store/apps/details?id=br.com.wine.app&hl=pt"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Baixe o App
+          </a>
+        )}
+        {osName === "iOS" && (
+          <a
+            href="https://apps.apple.com/br/app/wine-loja-e-clube-de-vinhos/id1411629873"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Baixe o App
+          </a>
+        )}
       </div>
       <div className="navBar-icons">
         <div>
