@@ -8,7 +8,7 @@ import Insta from "../components/insta";
 import Planos from "../components/planos";
 import Curiosidades from "../components/curiosidades";
 import Footer from "../components/footer";
-import "../css/header.css";
+import "../css/home.css";
 
 const Home = () => {
   return (
@@ -18,17 +18,21 @@ const Home = () => {
       <div>
         <NavBar />
       </div>
-      <div>
-        <Insta />
+      <div className="first-grid">
+        <div>
+          <Insta />
+        </div>
+        <div>
+          <Produtos />
+        </div>
       </div>
-      <div>
-        <Planos />
-      </div>
-      <div>
-        <Produtos />
-      </div>
-      <div>
-        <Curiosidades />
+      <div className="second-grid">
+        <div>
+          <Curiosidades />
+        </div>
+        <div>
+          <Planos />
+        </div>
       </div>
       <div>
         <Footer />

@@ -24,7 +24,8 @@ const Produtos = () => {
       <h3 className="products-title">Produtos</h3>
       {productsList.length !== 0 && (
         <Carousel
-          sx={{ maxWidth: 600 }}
+          className="test"
+          sx={{ maxWidth: 800 }}
           mx="auto"
           withIndicators
           height={700}
@@ -37,7 +38,7 @@ const Produtos = () => {
               <div>
                 <img src={objeto.image} alt="Imagem do vinho" className="products-imag" />
               </div>
-              <div className="products-container">
+              <div>
                 <div className="products-informations">
                   <span>{objeto.name}</span>
                   <span>{objeto.type}</span>

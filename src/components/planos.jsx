@@ -4,6 +4,7 @@ import useStore from "../store";
 import { v4 as uuidv4 } from "uuid";
 import { FiGift } from "react-icons/fi";
 import { useNavigate } from "react-router-dom";
+import "../css/planos.css";
 
 const Planos = () => {
   const setPlans = useStore((state) => state.setPlansList);
@@ -16,7 +17,7 @@ const Planos = () => {
   const plansList = useStore(useCallback((state) => state.planos, []));
 
   return (
-    <div>
+    <div className="plan-container">
       <h3>Planos</h3>
       {plansList.map((objeto) => (
         <div key={uuidv4()}>
