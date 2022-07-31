@@ -1,5 +1,6 @@
 import React from "react";
 // import { useNavigate } from "react-router-dom";
+import InstagramMock from "../components/InstagramMock";
 import Header from "../components/header";
 import NavBar from "../components/nav.bar";
 import Produtos from "../components/produtos";
@@ -12,6 +13,7 @@ import "../css/header.css";
 const Home = () => {
   return (
     <div>
+      //<InstagramMock />
       <Header />
       <div>
         <NavBar />

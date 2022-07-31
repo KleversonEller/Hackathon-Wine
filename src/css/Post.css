@@ -1,0 +1,65 @@
+.instagram-container {
+  border: 1px black solid;
+  height: 500px;
+  width: 250px;
+  margin: 10px;
+}
+
+.instagram-header {
+  /* border: 1px blue solid; */
+  display: flex;
+  height: 50px;
+  /* align-items:center; */
+  margin: 2px auto;
+}
+
+.instagram-avatar {
+  width: 48px;
+  height: 48px;
+  margin: 2px;
+}
+
+.instagram-username {
+  font-weight: bold;
+  /* border: 1px purple solid; */
+  margin: 4px 2px 1px;
+}
+
+.instagram-localization {
+  /* border: 1px purple solid; */
+  margin: 1px 2px;
+  font-size: small;
+}
+
+.instagram-post {
+  width: 250px;
+  margin: 2px auto;
+}
+
+.instagram-actions {
+  display: flex;
+  justify-content: space-between;
+  /* border: 1px green solid; */
+  height: 30px;
+}
+
+div > svg {
+  margin: 2px 5px;
+  width: 20px;
+}
+
+.instagram-user-caption {
+  /* border: 1px yellow solid; */
+  text-align: left;
+  margin: 4px;
+  height: 150px;
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.instagram-caption {
+  /* border: 1px purple solid; */
+  margin: 0 auto;
+}
