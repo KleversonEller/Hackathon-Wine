@@ -1,7 +1,7 @@
 .produtos {
     background-color: blue;
     width: 60vw;
-    height: 500px;
+    height: 650px;
 }
 
 .container {
@@ -16,7 +16,7 @@
     justify-content: space-around;
     align-items: center;
     background-color: blueviolet;
-    height: 380px;
+    height: 68%;
     margin-right: 20px;
     padding: 3%;
 }
@@ -24,7 +24,7 @@
 .container-card img {
     background-color: chartreuse;
     width: 50%;
-    height: 70%;
+    height: 80%;
 }
 
 .container-descrição {
