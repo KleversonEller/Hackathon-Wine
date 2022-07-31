@@ -2,7 +2,7 @@ import React from "react";
 import "../css/notFound.css";
 import construcao from "../image/construcao.gif";
 
-const Catalogo = () => {
+const Store = () => {
   return (
     <div className="container-construcao">
       <img
@@ -13,4 +13,4 @@ const Catalogo = () => {
   );
 };
 
-export default Catalogo;
+export default Store;
