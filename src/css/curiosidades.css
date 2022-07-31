@@ -1,0 +1,31 @@
+.curiosity-container {
+    background-color: rgb(241, 236, 236);
+    width: 60vw;
+    height: 575px;
+    padding: 3% 5% 0 5%;
+}
+
+.curiosity-card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    justify-content: space-around;
+    background-color: #8beb62;
+    width: 55%;
+    height: 75%;
+    margin-top: 10px;
+}
+
+.curiosity-img {
+    width: 250px;
+    margin-left: 25px;
+    margin-top: 100px;
+    padding-bottom: 10px;
+}
+
+
+.curiosity-span {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
