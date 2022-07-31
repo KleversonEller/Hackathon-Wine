@@ -1,0 +1,13 @@
+.footer-container {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-socialMediaIcons {
+    align-items: center;
+    color: magenta;
+    display: flex;
+    font-size: 400%;
+    height: auto;
+    width: 5%;
+}
