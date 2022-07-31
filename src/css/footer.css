@@ -1,13 +1,16 @@
 .footer-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .footer-socialMediaIcons {
     align-items: center;
-    color: magenta;
     display: flex;
-    font-size: 400%;
+    font-size: 200%;
     height: auto;
-    width: 5%;
+    width: 8%;
+}
+
+.footer-image-bottle {
+    width: 10%;
 }
