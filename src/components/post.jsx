@@ -1,5 +1,5 @@
 import React from "react";
-import "../css/Post.css";
+import "../css/post.css";
 
 const Post = ({ post: { username, img, caption, localization, comments } }) => {
   return (

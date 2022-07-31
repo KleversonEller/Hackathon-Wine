@@ -1,5 +1,8 @@
 {
     "cSpell.words": [
         "zustand"
+    ],
+    "conventionalCommits.scopes": [
+        "insta.jsx"
     ]
 }

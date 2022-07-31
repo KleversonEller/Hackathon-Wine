@@ -1,18 +1,21 @@
 import create from "zustand";
 import { devtools } from "zustand/middleware";
 import { getCatalogo } from "./services/catalogo.api";
+import { getPlans } from "./services/planos.api";
 
 const useStore = create(
   devtools((set) => ({
     produtos: [],
-
-    addProduto: (id) => set((state) => ({ carrinho: [...state.state1, id] })), // Modificador de estado
-
-    limpaCarrinho: () => set({ carrinho: [] }),
+    planos: [],
 
     setProductsList: async () => {
       const response = await getCatalogo();
       set({ produtos: await response });
+    },
+
+    setPlansList: async () => {
+      const response = await getPlans();
+      set({ planos: await response });
     },
   }))
 );
