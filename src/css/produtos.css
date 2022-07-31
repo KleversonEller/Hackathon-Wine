@@ -1,42 +1,42 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
-
-.products-container {
-    background-color: rgb(241, 236, 236);
-    border-radius: 1%;
-    width: 60rem;
-    padding-bottom: 30px;
-    margin-left: 20px;
+.produtos {
+    background-color: blue;
+    width: 60vw;
+    height: 500px;
 }
 
-.products-title {
-    font-family: 'Raleway', sans-serif;
-    font-size: 20px;
-    font-weight: 900;
-    padding: 30px 20px;
+.container {
+    width: 90%;
+    height: 90%;
+    background-color: aqua;
+    padding: 3% 5% 0 5%;
 }
 
-.products-link {
-    background-color: red;
-    height: 30px;
+.container-card {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: blueviolet;
+    height: 380px;
+    margin-right: 20px;
+    padding: 3%;
 }
 
-.products-informations {
-    background-color: white;
-    font-family: 'Raleway', sans-serif;
-    font-size: 20px;
-    font-weight: 700;
-    height: 200px;
-    width: 80rem;
+.container-card img {
+    background-color: chartreuse;
+    width: 50%;
+    height: 70%;
 }
 
-.products-objects{
+.container-descrição {
+    background-color: brown;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin: 5px;
+    align-items: center;
+    margin: 2%;
 }
 
-.products-imag {
+.container-link {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
+    background-color: crimson;
 }

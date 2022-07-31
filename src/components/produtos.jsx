@@ -20,12 +20,11 @@ const Produtos = () => {
   const productsList = useStore(useCallback((state) => state.produtos, []));
 
   return (
-    <div className="products-container">
-      <h3 className="products-title">Produtos</h3>
+    <div className="produtos">
+      <h3>Produtos</h3>
       {productsList.length !== 0 && (
         <Carousel
-          sx={{ maxWidth: 600 }}
-          mx="auto"
+          className="container"
           withIndicators
           height={700}
           plugins={[autoplay.current]}
@@ -33,20 +32,21 @@ const Produtos = () => {
           onMouseLeave={autoplay.current.reset}
         >
           {productsList.map((objeto) => (
-            <Carousel.Slide key={uuidv4()} className="products-objects">
+            <Carousel.Slide key={uuidv4()} className="container-card">
+              <img
+                src={objeto.image}
+                alt={`Ilustração da garrafa do vinho ${objeto.name}`}
+              />
               <div>
-                <img src={objeto.image} alt="Imagem do vinho" className="products-imag" />
-              </div>
-              <div className="products-container">
-                <div className="products-informations">
+                <div className="container-descrição">
                   <span>{objeto.name}</span>
                   <span>{objeto.type}</span>
                   <span>{objeto.country}</span>
                   <span>{objeto.sommelierComment}</span>
                 </div>
-                <div className="products-link">
-                  <Link to={`/catalogo/${objeto.id}`}>Saiba Mais</Link>
-                </div>
+                <Link to={`/catalogo/${objeto.id}`} className="container-link">
+                  Saiba Mais
+                </Link>
               </div>
             </Carousel.Slide>
           ))}
