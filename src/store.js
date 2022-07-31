@@ -1,17 +1,18 @@
 import create from "zustand";
 import { devtools } from "zustand/middleware";
+import { getCatalogo } from "./services/catalogo.api";
 
 const useStore = create(
   devtools((set) => ({
-    carrinho: [], // Estado puro
+    produtos: [],
 
     addProduto: (id) => set((state) => ({ carrinho: [...state.state1, id] })), // Modificador de estado
 
     limpaCarrinho: () => set({ carrinho: [] }),
 
-    fetchWineAPI: async () => {
-      const response = await fetch("xyz.com");
-      set({ carrinho: response.data });
+    setProductsList: async () => {
+      const response = await getCatalogo();
+      set({ produtos: await response });
     },
   }))
 );
