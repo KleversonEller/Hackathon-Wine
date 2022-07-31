@@ -45,10 +45,13 @@ const Produtos = () => {
                     <b>Tipo: </b>
                     {objeto.type}
                   </span>
-                  <span>
+                  <div className="pais">
                     <b>Origem: </b>
                     {objeto.country}
-                  </span>
+                    <div className="flag">
+                      <img src={objeto.flag} alt={`Bandeira de(o/a) ${objeto.counry}`} />
+                    </div>
+                  </div>
                   <span>
                     <b>Comentário Sommelier:</b> <br />
                     <br />

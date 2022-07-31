@@ -61,3 +61,12 @@
     height: 25px;
     padding: 2px;
 }
+
+.pais {
+    display: flex;
+}
+
+.flag img {
+    width: 20px;
+    margin: 0 0 -3px 4px;
+}
