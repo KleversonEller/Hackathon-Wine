@@ -1,23 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
 .header-container {
     align-items: center;
-    /* background-color: blueviolet; */
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .header-img-bottle1 {
-    width: 10%;
+    width: 11%;
+    padding-top: 0;
 }
 
 .header-img-logo {
     width: 15%;
 }
 
-.header-img-bottle2 {
-    height: 100px;
-    width: 100px;
+.header-title {
+    font-size: 40px;
+    font-family: 'Raleway', sans-serif;
 }
 
-.container {
-    background-color: aqua;
+.header-img-bottle2 {
+    height: auto;
+    width: 10%;
+    display: flex;
+    justify-content: flex-end;
+
 }
