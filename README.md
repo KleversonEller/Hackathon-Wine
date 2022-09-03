@@ -12,8 +12,6 @@
 
 Em parceria com a <a href="https://www.linkedin.com/school/betrybe/" target="_blank" rel="external"><strong>Trybe</strong></a> e com a Empresa <a href="https://www.linkedin.com/company/wine.com.br/" target="_blank" rel="external"><strong>Wine</strong></a>, nos dias 30 e 31 de julho de 2022,  participamos de um Hackathon de mais de 26h.
 
-
-
-O evento teve por objetivos a utilização das habilidades adquiridas no curso de Desenvolvimento web da Trybe, durante o evento foi proposto o desenvolvimento de uma home page para a Wine.
+Durante o evente tivemos a oportunidade de utilizar as habilidades adquiridas no curso Desenvolvimento web da Trybe, durante o evento foi proposto o desenvolvimento de uma home page para a Wine.
 Após o evento continuamos desenvolvendo a aplicação, implementando novas paginas, além da home, e desenvolvendo um Back-End
 
